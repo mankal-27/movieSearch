@@ -25,3 +25,10 @@ A production-ready movie search backend built with Node.js, Express, and MongoDB
    ```bash
    git clone https://github.com/mankal-27/movieSearch.git
    cd movieSearch/backend
+
+**Generating a JWT Secret using Base64**
+
+Here's a Node.js command to generate a random 256-bit JWT secret and encode it using base64:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
